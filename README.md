@@ -32,3 +32,7 @@ Building standalone apps signifie développer des applications qui peuvent fonct
 - **Fonctionnalités en Ligne** : Peut ne pas être adaptée pour des fonctionnalités nécessitant une connexion constante à Internet.
 
 En résumé, la création d'applications autonomes implique de développer des logiciels capables de fonctionner indépendamment de l'infrastructure ou des services externes, offrant ainsi une grande autonomie et une facilité de déploiement.
+
+
+Un serveur web embarqué est un serveur web intégré dans une application ou un dispositif, permettant à cette application ou ce dispositif d’héberger des ressources web comme des pages HTML, des fichiers CSS, des scripts JavaScript, etc.
+
