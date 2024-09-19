@@ -1,0 +1,54 @@
+En Java, POM signifie "Project Object Model". C'est un fichier XML nommé pom.xml utilisé par Apache Maven, un outil de gestion de projet et d'automatisation de la construction.
+Voici les principales fonctions du POM :
+Définition du projet : Il contient des informations sur le projet, comme son nom, sa version, et sa description.
+Gestion des dépendances : Le POM permet de spécifier les bibliothèques dont le projet a besoin. Maven va automatiquement télécharger et gérer ces dépendances.
+Configuration des plugins : Il peut inclure des plugins qui ajoutent des fonctionnalités, comme la compilation du code, les tests, et le packaging.
+Héritage et modularité : Un POM peut hériter d'un autre POM, ce qui facilite la gestion de projets complexes et la réutilisation de configurations.
+
+<!-- xml < version="1.0" encoding="UTF-8"> first line -->
+<!-- Cette ligne indique que le fichier est un document XML et définit la version et l'encodage -->
+UTF-8
+Longueur : Variable (1 à 4 octets).
+Compatibilité : Compatible avec ASCII.
+Utilisation : Web et fichiers texte.
+Efficacité : Idéal pour l'anglais.
+
+UTF-16
+Longueur : Variable (2 à 4 octets).
+Compatibilité : Pas compatible avec ASCII.
+Utilisation : Applications Java, API Windows.
+Efficacité : Meilleur pour les langues asiatiques.
+
+UTF-32
+Longueur : Fixe (4 octets).
+Compatibilité : Pas compatible avec ASCII.
+Utilisation : Traitement interne.
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+<project> : C'est l'élément racine du fichier POM (Project Object Model) de Maven.
+xmlns et xmlns:xsi : Ces attributs définissent l'espace de noms et l'utilisation de l'instance XML Schema.
+xsi:schemaLocation : Indique où se trouve le schéma XML pour la validation.
+
+<modelVersion>4.0.0</modelVersion>
+Cela spécifie la version du modèle POM utilisé.
+
+
+<!-- <parent>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>3.3.3</version>
+	<relativePath/> <!-- lookup parent from repository -->
+<!-- </parent> -->
+<!-- le bloc <parent> indique que ton projet hérite des configurations du POM parent, en l'occurrence le spring-boot-starter-parent -->
+Voici quelques exemples de configurations que tu peux hériter en utilisant spring-boot-starter-parent :
+Dépendances Courantes :
+
+Par exemple, des dépendances comme spring-web, spring-data, etc., peuvent être automatiquement ajoutées avec des versions compatibles.
+Plugins Maven :
+
+Le parent peut définir des plugins pour compiler le code, exécuter des tests, ou créer des fichiers JAR et WAR, avec des configurations par défaut.
+Propriétés de Construction :
+
+Des propriétés comme la version de Java (<java.version>17</java.version>) peuvent être définies, et tu peux les utiliser dans ton POM enfant.
