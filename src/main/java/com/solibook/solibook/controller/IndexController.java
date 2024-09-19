@@ -12,22 +12,15 @@ public class IndexController {
     @Autowired
     // private IndexService indexService;
 
-    @GetMapping("/x")
+    @GetMapping("/")
     @ResponseBody
     public String getIndex() {
-        // String name = indexService.to_low("Hello World"); // Method naming convention
-        String name = "amine";
-        return name;
+        return "amine";
     }
 
-    @GetMapping("/")
-    public String generateIndex() { // Corrected method name for consistency
-        return "index.html"; // Simplified return statement
-    }
-
-    @GetMapping("/y")
-    @ResponseBody
-    public String display() { // Corrected method name
-        return "lhwa dwa"; // Simplified return statement
+    @GetMapping("/admin")
+    public String generateIndex() 
+    {
+        return "index.html";
     }
 }

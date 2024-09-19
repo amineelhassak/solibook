@@ -52,3 +52,30 @@ Le parent peut définir des plugins pour compiler le code, exécuter des tests, 
 Propriétés de Construction :
 
 Des propriétés comme la version de Java (<java.version>17</java.version>) peuvent être définies, et tu peux les utiliser dans ton POM enfant.
+
+
+
+
+
+fullrest api https://www.geeksforgeeks.org/rest-api-introduction/
+
+
+
+
+archi project 
+
+src
+└── main
+    └── java
+        └── com
+            └── votre
+                └── package
+                    ├── YourApplication.java              // Classe principale de l'application
+                    ├── controller                        // Package pour les contrôleurs
+                    │   └── YourDataModelController.java // Contrôleur pour gérer les requêtes HTTP
+                    ├── model                             // Package pour les modèles
+                    │   └── YourDataModel.java            // Modèle de données avec Lombok
+                    ├── repository                        // Package pour les dépôts
+                    │   └── YourDataModelRepository.java  // Interface de dépôt pour MongoDB
+                    └── service                           // Package pour les services
+                        └── YourDataModelService.java      // Service pour la logique métier
